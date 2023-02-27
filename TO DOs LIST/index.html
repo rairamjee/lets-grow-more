@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <title>To Dos List</title>
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">TODOs <span>LIST</span></label>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Help</a></li>
+    </ul>
+  </nav>
+  <section>
+    <h2 id="heading">-- TO DOs LIST --</h2>
+    <div class="container">
+      <label for="title">Title</label>
+      <br>
+      <input type="text" id="titl" class="fr" placeholder="Add a title Here">
+      <br><br>
+
+      <label for="Description">Description</label>
+      <br>
+      <textarea id="descrip" class="fr " cols="30" rows="10" placeholder="Description"></textarea>
+
+      <br><br>
+      <button type="submit" id="add">Add To List</button>
+
+      <button type="clr" id="add" onclick="clearStorage()">Clear List</button>
+    </div>
+
+    <div class="container2">
+      <h2>- Your Entered Items -</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Sl No</th>
+            <th scope="col">Title </th>
+            <th scope="col">Description</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody id="tablebody">
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td><button class="btn1">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
